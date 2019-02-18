@@ -16,3 +16,10 @@ fi
 if [[ -f ~/.zextra ]]; then
   source ~/.zextra
 fi
+
+if [[ -f ~/.zalias ]]; then
+  source ~/.zalias
+fi
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/khsing/.sdkman"
+[[ -s "/Users/khsing/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/khsing/.sdkman/bin/sdkman-init.sh"
