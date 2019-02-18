@@ -19,12 +19,12 @@ TOBE_LINKED=(
     ".wgetrc"
     ".zprezto"
     ".zshrc"
-    ".zalias"
     ".editorconfig"
     ".curlrc"
     ".screenrc"
     ".wgetrc"
     ".php_cs"
+    ".aliases"
 )
 count=0
 while [ "x${TOBE_LINKED[count]}" != "x" ]
@@ -48,7 +48,6 @@ ZPREZTORCS=(
     "zpreztorc"
     "zlogin"
     "zlogout"
-    "zalias"
 )
 zcount=0
 while [[ "x${ZPREZTORCS[zcount]}" != "x" ]]; do
