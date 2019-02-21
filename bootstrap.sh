@@ -13,7 +13,6 @@ TOBE_LINKED=(
     ".gitconfig"
     ".gitignore"
     ".gvimrc"
-    ".macos"
     ".vimrc"
     ".vim"
     ".wgetrc"
