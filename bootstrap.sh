@@ -18,6 +18,7 @@ TOBE_LINKED=(
     ".wgetrc"
     ".zprezto"
     ".zshrc"
+    ".config"
     ".editorconfig"
     ".curlrc"
     ".screenrc"
