@@ -1,8 +1,15 @@
 export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="dracula"
-# ZSH_TMUX_AUTOSTART="true"
-plugins=(git npm ssh-agent tmux)
+CLICOLOR=1
+plugins=(
+  git
+  osx
+  npm
+  ssh-agent
+  jira
+  tmux
+)
 source $ZSH/oh-my-zsh.sh
 
 # put several
@@ -18,9 +25,3 @@ fi
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR=$HOME/.sdkman
 [[ -s "/Users/khsing/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/khsing/.sdkman/bin/sdkman-init.sh"
-
-# if which tmux 2>&1 >/dev/null; then
-#   if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
-#     tmux attach -t hack || tmux new -s hack; exit
-#   fi
-# fi

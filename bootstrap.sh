@@ -36,26 +36,3 @@ do
        ln -sf ${__CURRDIR__}/$link ~/$link
    fi
 done
-
-
-# Setup zsh using .zprezto
-#
-
-ZPREZTORCS=(
-    "x"
-    "zshenv"
-    "zprofile"
-    "zpreztorc"
-    "zlogin"
-    "zlogout"
-)
-zcount=0
-while [[ "x${ZPREZTORCS[zcount]}" != "x" ]]; do
-    zcount=$(( $zcount + 1 ))
-    rcfile=${ZPREZTORCS[zcount]}
-    rcpath=$__CURRDIR__/.zprezto/runcoms/${ZPREZTORCS[zcount]}
-    # echo $rcpath
-    if [[ -f $rcpath && ! -L ~/.${rcfile} ]]; then
-        ln -sf $rcpath ~/.${rcfile}
-    fi
-done
