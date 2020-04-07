@@ -8,7 +8,7 @@ This dotfiles fork from [mathiasbynens/dotfiles](https://github.com/mathiasbynen
 
 You can clone the repository wherever you want. (I like to keep it in `~/workspace/dotfiles`) The bootstrapper script will create links at home folder.
 
-```bash
+```sh
 git clone https://github.com/khsing/dotfiles.git && cd dotfiles &&  bash bootstrap.sh
 ```
 
@@ -18,7 +18,7 @@ If `~/.zextra` exists, it will be sourced along with the other files. You can us
 
 My `~/.zextra` looks something like this:
 
-```bash
+```sh
 # Git credentials
 # Not in the repository, to prevent people from accidentally committing under my name
 GIT_AUTHOR_NAME="Guixing Bai"
@@ -35,7 +35,7 @@ You could also use `~/.zextra` to override settings, functions and aliases from 
 
 When setting up a new Mac, you may want to set some sensible OS X defaults:
 
-```bash
+```sh
 ./.macos
 ```
 
@@ -43,7 +43,7 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 
 When setting up a new Mac, you may want to install some common [Homebrew](http://brew.sh/) formulae (after installing Homebrew, of course):
 
-```bash
+```sh
 ./brew.sh
 ```
 

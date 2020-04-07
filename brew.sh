@@ -77,7 +77,6 @@ brew install dnsmasq
 brew install nginx
 
 # Install Caskroom and tools
-brew tap caskroom/cask
 brew tap homebrew/cask-versions
 brew tap homebrew/cask-fonts
 
@@ -112,11 +111,8 @@ brew cask install icons8
 brew cask install iina
 # http api client
 brew cask install insomnia
-# best terminial ever
 brew cask install iterm2
-# read
 brew cask install kindle
-brew cask install neteasemusic
 brew cask install notion
 brew cask install omnidisksweeper
 brew cask install psequel
@@ -125,11 +121,8 @@ brew cask install sip
 brew cask install slack
 brew cask install spectacle
 brew cask install sublime-text
-brew cask install virtualbox
-brew cask install virtualbox-extension-pack
 brew cask install viscosity
-brew cask install wechatwebdevtools
-brew cask install xmind
+brew cask install font-hack-nerd-font
 
 # Remove outdated versions from the cellar.
 brew cleanup -s

@@ -160,3 +160,5 @@ alias path='echo -e ${PATH//:/\\n}'
 
 # Faster npm for China
 alias cnpm="npm --registry=https://registry.npm.taobao.org"
+# generate random password
+alias pwgen="dd if=/dev/urandom count=12 bs=1 2>/dev/null | base64 "
