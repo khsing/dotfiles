@@ -4,23 +4,20 @@ ZSH_THEME="dracula"
 CLICOLOR=1
 export WORKSPACE=$HOME/workspace
 export PROJECT_HOME=$WORKSPACE/projects
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export NVM_DIR="$HOME/.nvm"
 plugins=(
-  git
-  vscode
-  osx
-  npm
   ssh-agent
-  jira
+  osx
+  git
+  golang
+  vscode
+  nvm
+  npm
   python
-  django
-  virtualenv
-  virtualenvwrapper
   tmux
-  sdk
-  kubectl
-  docker
   pipenv
+  docker
+  kubectl
 )
 source $ZSH/oh-my-zsh.sh
 
@@ -37,3 +34,6 @@ fi
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR=$HOME/.sdkman
 [[ -s "/Users/khsing/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/khsing/.sdkman/bin/sdkman-init.sh"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi

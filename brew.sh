@@ -32,7 +32,6 @@ brew install gnupg
 brew install vim
 brew install curl
 brew install grep
-brew install screen
 brew install tmux
 brew install gmp
 
@@ -45,15 +44,12 @@ brew install dex2jar
 brew install dns2tcp
 brew install fcrackzip
 brew install john-jumbo
-brew install netpbm
 brew install nmap
 brew install pngcheck
 brew install sqlmap
 brew install tcpflow
 brew install tcpreplay
 brew install tcptrace
-brew install pdf2image
-brew install xz
 
 # Install other useful binaries.
 brew install ack
@@ -75,6 +71,7 @@ brew install composer
 brew install mysql
 brew install dnsmasq
 brew install nginx
+brew install jq
 
 # Install Caskroom and tools
 brew tap homebrew/cask-versions
@@ -90,8 +87,6 @@ brew cask install alfred
 brew cask install android-platform-tools
 # tool to uninstall application
 brew cask install appcleaner
-# Baidu Pan client
-brew cask install baidunetdisk
 # great text editor
 brew cask install bbedit
 # ebook management
@@ -104,9 +99,7 @@ brew cask install drawio
 brew cask install firefox
 brew cask install font-b612
 brew cask install font-inconsolata
-brew cask install font-source-code-pro
 brew cask install google-chrome
-brew cask install icons8
 # Best video player ever
 brew cask install iina
 # http api client
@@ -115,14 +108,14 @@ brew cask install iterm2
 brew cask install kindle
 brew cask install notion
 brew cask install omnidisksweeper
-brew cask install psequel
-brew cask install sequel-pro-nightly
 brew cask install sip
 brew cask install slack
-brew cask install spectacle
-brew cask install sublime-text
+brew cask install rectangle
 brew cask install viscosity
 brew cask install font-hack-nerd-font
+
+# install tools require xquartz
+brew install pdf2image # require xquartz
 
 # Remove outdated versions from the cellar.
 brew cleanup -s
