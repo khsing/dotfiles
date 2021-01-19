@@ -192,7 +192,7 @@
 
 	insteadOf = "gist:"
 [user]
-	name = Guixing Bai
+	name = Gavin Pai
 	email = khsing.cn@gmail.com
 [pull]
 	ff = only

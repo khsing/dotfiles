@@ -11,6 +11,9 @@ brew upgrade
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
 
+# Disable auto update while install
+HOMEBREW_NO_AUTO_UPDATE=true
+
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
@@ -36,20 +39,12 @@ brew install tmux
 brew install gmp
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install aircrack-ng
-brew install bfg
 brew install binutils
-brew install cifer
 brew install dex2jar
 brew install dns2tcp
-brew install fcrackzip
-brew install john-jumbo
 brew install nmap
 brew install pngcheck
 brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
 
 # Install other useful binaries.
 brew install ack
@@ -78,41 +73,35 @@ brew tap homebrew/cask-versions
 brew tap homebrew/cask-fonts
 
 # xquartz, some tools required
-brew cask install xquartz
+brew install --cask xquartz
 # 1Password
-brew cask install 1password
+brew install --cask 1password
 # Alfred
-brew cask install alfred
+brew install --cask alfred
 # Android command line tools, e.g fastboot, adb
-brew cask install android-platform-tools
+brew install --cask android-platform-tools
 # tool to uninstall application
-brew cask install appcleaner
+brew install --cask appcleaner
 # great text editor
-brew cask install bbedit
+brew install --cask bbedit
 # ebook management
-brew cask install calibre
+brew install --cask calibre
 # colorpicker
-brew cask install colorpicker-skalacolor
+brew install --cask colorpicker-skalacolor
 # ftp webdav client
-brew cask install cyberduck
-brew cask install drawio
-brew cask install firefox
-brew cask install font-b612
-brew cask install font-inconsolata
-brew cask install google-chrome
-# Best video player ever
-brew cask install iina
+brew install --cask firefox
+brew install --cask font-inconsolata font-cascadia-mono font-cascadia
+brew install --cask google-chrome
 # http api client
-brew cask install insomnia
-brew cask install iterm2
-brew cask install kindle
-brew cask install notion
-brew cask install omnidisksweeper
-brew cask install sip
-brew cask install slack
-brew cask install rectangle
-brew cask install viscosity
-brew cask install font-hack-nerd-font
+brew install --cask insomnia
+brew install --cask iterm2
+brew install --cask notion
+brew install --cask omnidisksweeper
+brew install --cask sip
+brew install --cask rectangle
+brew install --cask viscosity
+brew install --cask font-hack-nerd-font
+brew install --cask itsycal
 
 # install tools require xquartz
 brew install pdf2image # require xquartz

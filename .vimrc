@@ -1,13 +1,6 @@
-" execute pathogen#infect()
-" Use the Solarized Dark theme
-set background=dark
-colorscheme solarized
-let g:solarized_termtrans=0
-let g:solarized_contrast="normal"
-let g:solarized_visibility="normal"
-
-
-" let g:solarized_termtrans=1
+" set background=dark
+packadd! dracula
+colorscheme dracula
 
 " Make Vim more useful
 set nocompatible

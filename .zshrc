@@ -1,3 +1,4 @@
+export PATH=$PATH:/opt/homebrew/bin
 export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="dracula"
@@ -13,11 +14,13 @@ plugins=(
   vscode
   nvm
   npm
-  python
+  pyenv
   tmux
+  dotenv
   pipenv
   docker
   kubectl
+  poetry
 )
 source $ZSH/oh-my-zsh.sh
 
@@ -37,3 +40,5 @@ export SDKMAN_DIR=$HOME/.sdkman
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+export PATH="$HOME/.poetry/bin:$PATH"
