@@ -12,11 +12,9 @@ TOBE_LINKED=(
     "x"
     ".gitconfig"
     ".gitignore"
-    ".gvimrc"
     ".vimrc"
     ".vim"
     ".wgetrc"
-    ".zprezto"
     ".zshrc"
     ".config"
     ".editorconfig"
@@ -27,12 +25,11 @@ TOBE_LINKED=(
     ".aliases"
 )
 count=0
-while [ "x${TOBE_LINKED[count]}" != "x" ]
-do
-   count=$(( $count + 1 ))
-   link=${TOBE_LINKED[count]}
-   # echo $link
-   if [[ -e $link && ! -L ~/$link ]]; then
-       ln -sf ${__CURRDIR__}/$link ~/$link
-   fi
+while [ "x${TOBE_LINKED[count]}" != "x" ];do
+    count=$(( $count + 1 ))
+    link=${TOBE_LINKED[count]}
+    # echo $link
+    if [[ -e $link && ! -L ~/$link ]]; then
+        ln -sf ${__CURRDIR__}/$link ~/$link
+    fi
 done

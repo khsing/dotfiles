@@ -182,6 +182,8 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 10
 defaults write NSGlobalDomain AppleLanguages -array "en" "en-US" "zh-Hans-US" "zh-Hans"
 defaults write NSGlobalDomain AppleLocale -string "en_US@currency=CNY"
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
+defaults write NSGlobalDomain AppleTemperatureUnit -string "Celsius"
+defaults write NSGlobalDomain AppleFirstWeekday -dict gregorian -int 2
 defaults write NSGlobalDomain AppleMetricUnits -bool true
 defaults write NSGlobalDomain AppleCollationOrder -string "zh@collation=pinyin"
 defaults write NSGlobalDomain NSLinguisticDataAssetsRequested -array "en" "en_US" "zh" "zh_CN" "zh_TW"
